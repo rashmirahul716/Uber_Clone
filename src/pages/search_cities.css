@@ -1,0 +1,235 @@
+/* search_cities.css - Scoped styles */
+.search_top_nav{
+    position: fixed;
+  height: 64px;
+background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  gap: 611.5px;
+  z-index: 1000;
+}
+.cities_page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.cities_hero_section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 40px 60px 40px;
+}
+
+.uber_cities h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  margin-top: 70px;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.uber_cities p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+
+.cities_airports_link {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.cities_see_prices_link {
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* Global Section */
+.cities_list_section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 0 40px;
+}
+
+.cities_global_container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.cities_global_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  min-width: 140px;
+  margin: 0;
+}
+
+.cities_columns_grid {
+  display: flex;
+  gap: 120px;
+  flex: 1;
+}
+
+.cities_column {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration:underline;
+}
+.cities_list_section{
+  margin-left:150px;
+gap:200px;
+}
+.search_footer_custom{
+  width:100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 12% 80px;
+}
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .search_top_nav {
+    width: 100%;
+    padding: 0 25px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cities_hero_section {
+    padding: 70px 30px 40px;
+  }
+
+  .uber_cities h1 {
+    font-size: 42px;
+  }
+
+  .cities_list_section {
+    margin: 0 auto 70px;
+    padding: 0 30px;
+  }
+
+  .cities_global_container {
+    gap: 40px;
+  }
+
+  .cities_columns_grid {
+    gap: 60px;
+  }
+
+  .search_footer_custom {
+    padding: 40px 8% 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .search_top_nav {
+    width: 100%;
+    height: 64px;
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .cities_hero_section {
+    padding: 60px 20px 35px;
+  }
+
+  .uber_cities h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 18px;
+  }
+
+  .uber_cities p {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .cities_see_prices_link {
+    font-size: 15px;
+  }
+
+  .cities_list_section {
+    margin: 0 20px 50px;
+    padding: 0;
+    display: block;
+  }
+
+  .cities_global_container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .cities_global_title {
+    font-size: 25px;
+    min-width: auto;
+  }
+
+  .cities_columns_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .cities_column {
+    flex: 1 1 120px;
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .search_footer_custom {
+    padding: 35px 20px 50px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+
+  .uber_cities h1 {
+    font-size: 29px;
+  }
+
+  .uber_cities p {
+    font-size: 14px;
+  }
+
+  .cities_global_title {
+    font-size: 22px;
+  }
+
+  .cities_columns_grid {
+    gap: 20px;
+  }
+
+  .cities_column {
+    flex-basis: 110px;
+    font-size: 13px;
+  }
+}

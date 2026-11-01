@@ -1,0 +1,565 @@
+/* Learnmore.css - Scoped styles */
+.learn_top_nav{
+  position: fixed;
+  height: 64px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  gap: 592px;
+  z-index: 1000;
+}
+.learnmore_page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ 
+  
+  overflow-x: hidden;
+
+}
+.learn_nav{
+  background-color: #f2f2f2;
+
+
+}
+.learn{
+    display: flex;
+  background-color: white;
+  align-items: center;
+  gap: 30px;
+  margin-left: 700px;
+  margin-top: -140px;
+  white-space: nowrap;
+}
+
+.learnmore_subnav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding: 20px 64px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.learnmore_ride_head {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.learn_navbar_2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.learn_navbar_2 a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.learn_navbar_2 h4 {
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.learn_navbar_2 a:hover h4 {
+  color: #000000;
+}
+/* Hero section styling */
+.learnmore_hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 64px;
+  min-height: 520px;
+  gap: 40px;
+}
+
+.learn_left {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.learn_left h1 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+}
+
+.learn_left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+.learn_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+
+.learn_right img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 0px; /* Modern crisp rectangular fit */
+  display: block;
+}
+
+/* Hero Section */
+.learnmore_hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  gap: 60px;
+}
+
+.learn_left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.learn_left h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.learn_left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.learn_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.learn_right img {
+  max-width: 540px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Features Container */
+.learnmore_features_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+}
+
+.learnmore_features_header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 70px auto;
+}
+
+.learnmore_features_header h1 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.learnmore_features_header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.learnmore_feature_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-bottom: 90px;
+}
+
+.learnmore_feature_reverse {
+  flex-direction: row-reverse;
+}
+
+.learn_feature_text {
+  flex: 1;
+  max-width: 480px;
+  width:100%
+}
+
+.learn_feature_text h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.learn_feature_text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b3b3b3;
+}
+
+.learn_feature_img_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.learn_feature_img_wrap img {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* FAQ Accordion Section */
+.freq_learn{
+  background-color: white;
+  color: black;
+  margin-bottom: 100px;
+  padding-left: 10%;
+  border-top: 1px solid #222222;
+  padding-top: 60px;
+}
+
+.freq_learn h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.learnmore_disclaimer {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #535353;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.learn_footer_custom{
+  width:100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 12% 80px;
+}
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  /* Top Navbar */
+
+  .learn_top_nav {
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 0 25px;
+  }
+
+  .learn {
+    margin-left: 0;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .learnmore_subnav_wrapper {
+    padding: 20px 30px;
+  }
+
+  .learn_navbar_2 {
+    gap: 15px;
+  }
+
+  /* Hero Section */
+
+  .learnmore_hero_section {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+
+  .learn_left h1 {
+    font-size: 40px;
+  }
+
+  .learn_right img {
+    width: 100%;
+  }
+
+  /* Features */
+
+  .learnmore_features_container {
+    padding: 35px 30px 60px;
+  }
+
+  .learnmore_features_header h1 {
+    font-size: 36px;
+  }
+
+  .learnmore_feature_row {
+    gap: 35px;
+    margin-bottom: 65px;
+  }
+
+  .learn_feature_text h2 {
+    font-size: 32px;
+  }
+
+  .learn_feature_img_wrap img {
+    width: 100%;
+  }
+
+  /* FAQ */
+
+  .freq_learn {
+    padding: 50px 7%;
+  }
+
+  .freq_learn h2 {
+    font-size: 32px;
+  }
+
+  .learn_footer_custom {
+    padding: 40px 7% 60px;
+  }
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  /* Top Navbar */
+
+  .learn_top_nav {
+    width: 100%;
+    height: 64px;
+    gap: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .learn {
+    margin: 0;
+    gap: 12px;
+    white-space: normal;
+  }
+
+  .learnmore_subnav_wrapper {
+    margin-top: 64px;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .learnmore_ride_head {
+    font-size: 24px;
+  }
+
+  .learn_navbar_2 {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .learn_navbar_2 h4 {
+    font-size: 13px;
+  }
+
+  /* Hero Section */
+
+  .learnmore_hero_section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .learn_left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .learn_left h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .learn_left p {
+    font-size: 15px;
+  }
+
+  .learn_right {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .learn_right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Features */
+
+  .learnmore_features_container {
+    padding: 30px 20px 50px;
+  }
+
+  .learnmore_features_header {
+    margin-bottom: 40px;
+  }
+
+  .learnmore_features_header h1 {
+    font-size: 29px;
+  }
+
+  .learnmore_features_header p {
+    font-size: 14px;
+  }
+
+  .learnmore_feature_row,
+  .learnmore_feature_reverse {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .learn_feature_text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .learn_feature_text h2 {
+    font-size: 28px;
+  }
+
+  .learn_feature_text p {
+    font-size: 14px;
+  }
+
+  .learn_feature_img_wrap {
+    width: 100%;
+  }
+
+  .learn_feature_img_wrap img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* FAQ */
+
+  .freq_learn {
+    padding: 35px 20px;
+    margin-bottom: 50px;
+  }
+
+  .freq_learn h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .learnmore_disclaimer {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+
+  /* Footer */
+
+  .learn_footer_custom {
+    padding: 35px 20px 50px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .learn_top_nav {
+    padding: 0 10px;
+  }
+
+  .learn {
+    gap: 8px;
+  }
+
+  .learnmore_subnav_wrapper {
+    padding: 12px 15px;
+  }
+
+  .learnmore_ride_head {
+    font-size: 21px;
+  }
+
+  .learn_navbar_2 {
+    gap: 10px;
+  }
+
+  .learn_navbar_2 h4 {
+    font-size: 12px;
+  }
+
+  .learnmore_hero_section {
+    padding: 30px 15px;
+  }
+
+  .learn_left h1 {
+    font-size: 29px;
+  }
+
+  .learnmore_features_container {
+    padding: 25px 15px 40px;
+  }
+
+  .learnmore_features_header h1 {
+    font-size: 25px;
+  }
+
+  .learn_feature_text h2 {
+    font-size: 24px;
+  }
+
+  .freq_learn {
+    padding: 30px 15px;
+  }
+
+  .freq_learn h2 {
+    font-size: 25px;
+  }
+
+  .learn_footer_custom {
+    padding: 30px 15px 40px;
+  }
+}

@@ -1,0 +1,1140 @@
+/* Uber.css - Scoped styles */
+
+.uber_page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+/* Container & Layout */
+.uber_hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 80px;
+  width:80%;
+  margin-left:150px;
+  margin-top: 100px;
+  min-height: 85vh;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Left Hero Content */
+.uber_hero_left {
+  max-width: 500px;
+  width: 100%;
+}
+
+.uber_location_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.uber_location_header button {
+  background: transparent;
+  border: none;
+  color: #a6a6a6;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.uber_location_header button:hover {
+  color: #ffffff;
+}
+
+.uber_hero_left h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* Pickup Dropdown Badge */
+.uber_pickup {
+  margin-bottom: 24px;
+}
+
+.uber_pickup_title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Input Card & Form Box */
+.uber_input_box {
+  border-radius: 12px;
+  padding: 16px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top:10px;
+  margin-bottom: 32px;
+}
+
+.uber_input_field {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+  padding: 18px 16px;
+  padding-left: 40px; /* Space for line/dot icon alignment */
+  font-size: 16px;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.uber_input_field::placeholder {
+  color: #5e5e5e;
+}
+
+.uber_arrow_icon {
+  position: absolute;
+  margin-left: -50px;
+  margin-top:15px;
+  cursor: pointer;
+}
+
+/* Custom vertical line & dots image positioning inside inputs */
+.uber_line_icon {
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Action Links & Buttons */
+.uber_hero_actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.uber_seeprice {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+}
+
+.uber_seeprice:hover {
+  background-color: #e2e2e2;
+}
+
+.uber_loginactivity {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 15px;
+  border-bottom: 1px solid transparent;
+}
+
+.uber_loginactivity:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Right Side Image Grid & Banner */
+.uber_hero_right {
+  position: relative;
+  max-width: 520px;
+  width: 100%;
+}
+
+.uber_collage_wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.uber_collage_wrapper  img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Schedule Banner Overlay */
+.uber_schedule {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+
+  /* Blur background */
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  color: #000000;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.uber_schedule p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.uber_schedule_btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.uber_schedule_btn:hover {
+  background-color: #333333;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .uber_hero_section {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+
+  .uber_hero_left, 
+  .uber_hero_right {
+    max-width: 100%;
+  }
+
+  .uber_hero_right {
+    margin-top: 40px;
+  }
+}
+/* Explore what you can do (6 dark cards) */
+.uber_suggestions_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+}
+
+.uber_suggestions_section h2 {
+  font-size: 38px;
+  font-weight: 650;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.uber_suggestions_grid_6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.uber_sug_card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 160px;
+}
+
+.uber_sug_content {
+  flex: 1;
+  padding-right: 14px;
+}
+
+.uber_sug_content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.uber_sug_content p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #aaaaaa;
+  margin-bottom: 18px;
+  max-width: 200px;
+}
+
+.uber_sug_content button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uber_sug_img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* How to request a ride (Carousel) */
+.uber_how_to_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+}
+
+.uber_how_to_section h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 36px;
+  color: #ffffff;
+}
+
+.uber_how_to_cards_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.uber_how_to_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.uber_how_to_photo {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.uber_how_to_card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.uber_how_to_card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #aaaaaa;
+}
+
+.uber_how_to_controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.uber_how_to_page_indicator {
+  font-size: 13px;
+  color: #888888;
+  margin-right: 8px;
+}
+
+.uber_carousel_btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uber_carousel_btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Planning your next getaway */
+.uber_getaway_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 90px 40px;
+  gap: 60px;
+}
+
+.uber_getaway_left {
+  flex: 1;
+  max-width: 460px;
+}
+
+.uber_getaway_left h2 {
+  font-size: 42px;
+  font-weight: 650;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.uber_getaway_left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.uber_city_pill_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.uber_getaway_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.uber_getaway_video {
+  max-width: 520px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* More ways to use Uber */
+.uber_more_ways_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+}
+
+.uber_more_ways_section h2 {
+  font-size: 38px;
+  font-weight: 650;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.uber_more_ways_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.uber_more_way_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.uber_more_way_img_wrap img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.uber_more_way_card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.uber_more_way_card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #aaaaaa;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.uber_more_way_link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Auto Rickshaw Wide Banner */
+.uber_auto_banner_section {
+  max-width: 1200px;
+  margin: 0 auto -60px auto;
+  padding: 0 40px;
+}
+
+.uber_auto_banner_img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Earn with Uber */
+.uber_earn_section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 80px 40px;
+}
+
+.uber_earn_section h2 {
+  max-width: 1200px;
+  margin: 0 auto 36px auto;
+  font-size: 38px;
+  font-weight: 650;
+  color: #000000;
+}
+
+.uber_earn_grid {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.uber_earn_card img {
+  width: 50%;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.uber_earn_card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.uber_earn_card p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 16px;
+}
+
+.uber_earn_link {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Uber for Business */
+.uber_business_section {
+  background-color: #ffffff;
+  color: #000000;
+  /* padding: 60px 40px 90px 40px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  margin: 0 auto;
+    padding-left:200px;
+    padding-right:200px;
+}
+
+.uber_business_img {
+  width: 100%;
+  max-width: 480px;
+
+  border-radius: 50% 50% 12px 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.uber_business_right {
+  flex: 1;
+  max-width: 500px;
+  
+  
+}
+
+.uber_business_right h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.uber_business_right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.uber_business_btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Dual QR Apps section */
+.uber_apps_qr_section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 40px 80px 40px;
+}
+
+.uber_apps_qr_section h2 {
+  max-width: 1200px;
+  margin: 0 auto 36px auto;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.uber_apps_qr_grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.uber_app_qr_box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.uber_app_qr_box img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.uber_app_qr_info {
+  flex: 1;
+}
+
+.uber_app_qr_info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.uber_app_qr_info p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+.uber_app_qr_arrow {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Rent out your car */
+.uber_rent_car_section {
+  width: 100%;
+  padding-left: 200px;
+  background-color: #ffffff;
+  color: #000000;
+ padding-right: 200px;
+ padding-top: 10x;
+ padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.uber_rent_car_left {
+  flex: 1;
+}
+
+.uber_rent_car_left img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  display: block;
+}
+
+.uber_rent_car_right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.uber_rent_car_right h2 {
+  font-size: 42px;
+  font-weight: 650;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.uber_rent_car_right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.uber_rent_car_btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Bottom Bar */
+.uber_bottom_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.uber_bottom_btn {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.uber_bottom_btn:hover {
+  text-decoration: underline;
+}
+.ubers_footer_custom{
+  width:100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 12% 80px;
+}
+
+
+/* ============================= */
+/* TABLET RESPONSIVE (max 900px) */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  /* Hero section */
+  .uber_hero_section {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 80px;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 40px;
+    min-height: auto;
+  }
+
+  .uber_hero_left,
+  .uber_hero_right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .uber_hero_left h1 {
+    font-size: 42px;
+  }
+
+  .uber_hero_right {
+    margin-top: 20px;
+  }
+
+  /* Suggestions cards */
+  .uber_suggestions_grid_6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How to request a ride */
+  .uber_how_to_cards_row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* More ways */
+  .uber_more_ways_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Getaway section */
+  .uber_getaway_section {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .uber_getaway_left,
+  .uber_getaway_right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .uber_getaway_video {
+    max-width: 100%;
+  }
+
+  /* Earn section */
+  .uber_earn_grid {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .uber_earn_card {
+    width: 47%;
+  }
+
+  .uber_earn_card img {
+    width: 100%;
+  }
+
+  /* Business section */
+  .uber_business_section {
+    width: 100%;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .uber_business_img {
+    max-width: 100%;
+  }
+
+  .uber_business_right {
+    max-width: 100%;
+  }
+
+  /* QR section */
+  .uber_apps_qr_grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Rent car section */
+  .uber_rent_car_section {
+    width: 100%;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .uber_rent_car_left,
+  .uber_rent_car_right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .uber_rent_car_left img {
+    max-width: 100%;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE (max 600px) */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  /* Hero section */
+  .uber_hero_section {
+    padding: 30px 18px;
+    margin-top: 70px;
+    gap: 25px;
+  }
+
+  .uber_hero_left h1 {
+    font-size: 34px;
+  }
+
+  .uber_location_header {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .uber_input_box {
+    padding: 12px 5px;
+  }
+
+  .uber_input_field {
+    font-size: 14px;
+    padding: 15px 12px;
+    padding-left: 40px;
+  }
+
+  .uber_hero_actions {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .uber_seeprice {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .uber_loginactivity {
+    font-size: 13px;
+  }
+
+  /* Schedule banner */
+  .uber_schedule {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .uber_schedule p {
+    font-size: 13px;
+  }
+
+  .uber_schedule_btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Suggestions */
+  .uber_suggestions_section,
+  .uber_how_to_section,
+  .uber_more_ways_section {
+    padding: 30px 18px 50px;
+  }
+
+  .uber_suggestions_section h2,
+  .uber_how_to_section h2,
+  .uber_more_ways_section h2,
+  .uber_apps_qr_section h2,
+  .uber_earn_section h2 {
+    font-size: 28px;
+  }
+
+  .uber_suggestions_grid_6,
+  .uber_how_to_cards_row,
+  .uber_more_ways_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .uber_sug_card {
+    padding: 18px;
+  }
+
+  .uber_sug_img {
+    width: 75px;
+  }
+
+  /* How to request */
+  .uber_how_to_photo {
+    height: 200px;
+  }
+
+  /* Getaway */
+  .uber_getaway_section {
+    padding: 35px 18px;
+    gap: 25px;
+  }
+
+  .uber_getaway_left h2,
+  .uber_business_right h2,
+  .uber_rent_car_right h2 {
+    font-size: 30px;
+  }
+
+  .uber_getaway_left p,
+  .uber_business_right p,
+  .uber_rent_car_right p {
+    font-size: 14px;
+  }
+
+  /* More ways images */
+  .uber_more_way_img_wrap img {
+    height: 200px;
+  }
+
+  /* Auto banner */
+  .uber_auto_banner_section {
+    padding: 0 18px;
+    margin-bottom: -20px;
+  }
+
+  .uber_auto_banner_img {
+    width: 100%;
+  }
+
+  /* Earn section */
+  .uber_earn_section {
+    padding: 50px 18px;
+  }
+
+  .uber_earn_grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .uber_earn_card {
+    width: 100%;
+  }
+
+  .uber_earn_card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Business */
+  .uber_business_section {
+    padding: 35px 18px;
+    text-align: left;
+  }
+
+  .uber_business_img {
+    width: 100%;
+  }
+
+  /* QR section */
+  .uber_apps_qr_section {
+    padding: 35px 18px 50px;
+  }
+
+  .uber_app_qr_box {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .uber_app_qr_box img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .uber_app_qr_info h3 {
+    font-size: 16px;
+  }
+
+  .uber_app_qr_info p {
+    font-size: 12px;
+  }
+
+  /* Rent car */
+  .uber_rent_car_section {
+    padding: 35px 18px;
+    gap: 25px;
+  }
+
+  .uber_rent_car_left img {
+    width: 100%;
+  }
+
+  /* Footer */
+  .ubers_footer_custom {
+    padding: 35px 18px 80px;
+  }
+
+  /* Bottom bar */
+  .uber_bottom_bar {
+    padding: 13px 0;
+  }
+
+  .uber_bottom_btn {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE (max 380px) */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .uber_hero_left h1 {
+    font-size: 29px;
+  }
+
+  .uber_schedule {
+    padding: 8px;
+  }
+
+  .uber_schedule p {
+    font-size: 11px;
+  }
+
+  .uber_schedule_btn {
+    padding: 7px 9px;
+    font-size: 10px;
+  }
+
+  .uber_sug_card {
+    padding: 14px;
+  }
+
+  .uber_sug_img {
+    width: 60px;
+  }
+
+  .uber_app_qr_box img {
+    width: 60px;
+    height: 60px;
+  }
+
+}

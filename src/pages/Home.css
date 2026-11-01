@@ -1,0 +1,1583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}.uber {
+    position: fixed;
+    top: -2px;
+    left: 110px;
+    z-index: 11;
+}
+
+/* Top Navbar */
+.home_top_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+  z-index: 1000;
+  margin-top: 0;
+  gap: 0;
+}
+
+.uber_nav_left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.uber_brand_logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  margin-right: 12px;
+}
+
+.uber_nav_links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uber_nav_link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.uber_nav_link:hover {
+  background-color: #262626;
+}
+
+.about_menu {
+  position: relative;
+  display: inline-block;
+}
+
+.uber_nav_linkabout {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s;
+}
+
+.uber_nav_linkabout:hover {
+  background-color: #262626;
+}
+
+.uber_nav_linkabout span {
+  font-size: 11px;
+}
+
+.about_dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 200px;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+}
+
+.about_dropdown a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.about_dropdown p {
+  padding: 10px 18px;
+  margin: 0;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.about_dropdown p:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.home_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uber_nav_en {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.uber_nav_en:hover {
+  background-color: #262626;
+}
+
+.uber_nav_text_link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.uber_nav_text_link:hover {
+  background-color: #262626;
+}
+
+.uber_nav_signup_btn {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.uber_nav_signup_btn:hover {
+  background-color: #e5e5e5;
+}
+
+
+.ride_nav {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 100px;
+  background-color: white;
+  color: #000;
+  
+
+}
+
+.ride_head {
+  margin: 90px;
+  font-size: 28px;
+  color: black;
+    background-color: white;
+}
+
+.navbar_2 {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  gap: 30px;
+  margin-left: 700px;
+  margin-top: -140px;
+  white-space: nowrap;
+}
+
+.navbar_2 a {
+  text-decoration: none;
+  color: #555;
+}
+
+.navbar_2 h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.navbar_2 a:hover {
+  color: black;
+}
+.booking_box{
+    position:absolute;
+    left:12%;
+    top:160px;
+    width:450px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.change_city {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.booking_box h1{
+    font-size:52px;
+    font-weight:700;
+    margin-top:15px;
+    margin-bottom:24px;
+}
+.pickup-now{
+    width: 150px;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    gap:2px;
+    font-size:17px;
+    font-weight:500;
+    margin-bottom:26px;
+}
+.pickup-now:hover{
+    background-color: #dbdada;
+}
+.image23_home {
+    z-index: 9;
+    margin-top: -60px;
+    margin-left: 10px;
+    position: absolute;
+}
+.image24_home{
+     position: absolute;
+    margin-left: 350px;
+    margin-top: 15px;
+    
+    z-index: 9;
+}
+.booking_box input{
+    width:85%;
+    height:55px;
+    border: none;
+    outline:none;
+    background-color: #eeeeee;
+    border-radius:12px;
+    padding-left: 55px;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.price_button_home{
+    height:45px;
+    background-color: #000;
+    color: white;
+    border:none;
+    border-radius:9px;
+    padding:0 29px;
+    font-size:16px;
+    font-weight:500;
+}
+.price_button:hover{
+    background-color: #333;
+}
+.image1 img{
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    border-radius:7px;
+}
+.explore_page{
+    position:absolute;
+    left:12%;
+    top:600px;
+    font-size:18px;
+}
+.explore_page h1{
+    letter-spacing:-1.5px;
+}
+.card1 {
+    padding: 20px;
+    display:flex;
+    gap: 40px;
+}
+
+.card2{
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+.ride_card{
+    background-color: #eeeeee;
+    width: 27%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.ride_card h3{
+    margin: 20px;
+}
+
+.ride_card p{
+    width: 60%;
+    margin:20px ;
+    font-size: 13px;
+}
+.ride_card img{
+    margin-left: 250px;
+    margin-top: -500px;
+}
+.ride_card button{
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.ride_card button:hover{
+ background-color: #eeeeee;
+}
+.reserve_ride{
+     background-color: #eeeeee;
+    width: 27%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.reserve_ride h3{
+    margin: 20px;
+}
+.reserve_ride p{
+    width: 60%;
+    margin:20px ;
+    font-size: 13px;
+}
+.reserve_ride img{
+    margin-left: 250px;
+    margin-top: -500px;
+}
+.reserve_ride button{
+    border-radius: 20px;
+    position: absolute;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.reserve_ride button:hover{
+ background-color: #eeeeee;
+}
+.intercity{
+     background-color: #eeeeee;
+    width: 27%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.intercity h3{
+    margin: 20px;
+}
+.intercity p{
+    width: 60%;
+    margin:20px ;
+    font-size: 13px;
+}
+.intercity img{
+    margin-left: 250px;
+    margin-top: -500px;
+}
+.intercity button{
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.intercity button:hover{
+ background-color: #eeeeee;
+}
+.rental{
+    background-color: #eeeeee;
+    width: 27%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.rental h3{
+    margin: 20px;
+}
+.rental p{
+    width: 60%;
+    margin:20px ;
+    font-size: 13px;
+}
+.rental img{
+    margin-left: 250px;
+    margin-top: -500px;
+}
+.rental button{
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.rental button:hover{
+ background-color: #eeeeee;
+}
+.bike_card{
+     background-color: #eeeeee;
+    width: 27%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.bike_card h3{
+    margin: 20px;
+}
+.bike_card p{
+    width: 60%;
+    margin:20px ;
+    font-size: 13px;
+}
+.bike_card img{
+    margin-left: 250px;
+    margin-top: -500px;
+}
+.bike_card button{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    margin-left: -330px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.bike_card button:hover{
+ background-color: #eeeeee;
+}
+.plan h3{
+    font-size: 37px;
+    margin-top: 40px;
+}
+.plan_page{
+    gap: 2%;
+    width: 75%;
+    display: flex;
+    margin-top: 30px;
+}
+.plan_left{
+    width: 92%;
+    height: 370px;
+    background-color: #9bcbd4;
+    border-radius: 14px;
+    padding: 50px 40px 40px 40px;
+}
+.plan_left h2{
+    font-size: 35px;
+}
+.plan_left img{
+    position: absolute;
+    margin-top: -9.6%;
+    margin-left: 29.5%;
+    border-radius: 20px;
+ } 
+.plan_left h5{
+    margin: 45px 0 12px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.plan_left label{
+    font-size: 15px;
+    color: #6b6b6b;
+    margin-bottom: 3px;
+}
+.plan_left input{
+    width: 190px;
+    height: 45px;
+    border: none;
+    border-radius: 9px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.plan_left button{
+    left:40px;
+    margin-top: 15px;
+    width:390px;
+    height:50px;
+    background-color: #000;
+    color: white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+}
+.choose{
+    display: flex;
+    gap: 10px;
+}
+.time{
+    margin-left: 25%;
+}
+.benefits{
+    border:1px solid #f1eeee;
+    border-radius:14px;
+    margin-right:-20%;
+}
+.benefits h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.benefits p {
+    margin-top:-80px;
+    padding: 5px 5px 5px 72px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 17px;
+}
+.benefits button{
+    background: none;
+    border: none;
+    text-decoration:underline;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.price{
+    display: block;
+    width: 100%;
+    height: 54px;
+    margin-top: 85px;
+    margin-left: -100px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.uber_one{
+    margin-top: 50px;
+    margin-left: -15%;
+    margin-bottom: 50px;
+}
+.uber_one h2{
+    font-size: 40px;
+    font-weight: 550;
+    margin-left: 13%;
+    margin-top: -23.5%;
+    color: aliceblue;
+}
+.uber_one p{
+    font-size: 16px;
+    font-weight: 100;
+     margin-left: 13%;
+    color: aliceblue;
+    width: 30%;
+    margin-top: 30px;
+}
+.uber_one button{
+    margin-left: 13%;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 25px;
+    border-radius: 10px;
+}
+.uber_one1 img{
+margin-top: 15%;
+}
+.uber_one1{
+    display: flex;
+    margin-top: 10%;
+}
+.uber_one1 h2{
+    font-size: 40px;
+    margin-top: 12%;
+    margin-bottom: 50px;
+}
+.ride_friends{
+    width: 35%;
+    font-size: 16.46px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.uber_one1 button{
+    border: none;
+    text-decoration: underline;
+    margin-top: 5%;
+    font-size: 17px;
+}
+.use_uber h2{
+    margin-top:150px;
+   font-size: 40px;
+    margin-bottom: 50px;
+}
+.card_travel{
+    display: flex;
+    width: 90%;
+    gap: 30px;
+}
+.card_travel h4{
+    margin-top: 20px;
+}
+.card_travel p{
+    margin-top: 30px;
+    font-size: 17.5px;
+}
+.card_travel button{
+    height:45px;
+    background-color: #000;
+    color: white;
+    border:none;
+    border-radius:9px;
+    padding:0 29px;
+    font-size:16px;
+    font-weight:500;
+    margin-top: 20px;
+}
+.bussiness img{
+    margin-top: 100px;
+    margin-left: -190px;
+}
+.bussiness h2{
+    width: 40%;
+    color:white;
+    margin-top: -35%;   
+}
+.bussiness p{
+    width: 40%;
+    color:white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.bussiness ul{
+    color: white;
+    margin-left:50px ;
+    font-size: 15px;
+}
+ul li{
+    margin-bottom: 20px;
+}
+.get{
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.check{
+    background: none;
+    color: white;
+    border: none;
+    text-decoration: underline;
+    padding: 20px;
+    margin-left: 50px;
+    font-size: 17px;   
+}
+.freq h2{
+    margin-top:150px;
+}
+.freq p{
+    margin-top:30px
+
+}
+span{
+    color: #5d5b5b;
+    font-size: 17px;
+}
+.domore{
+  
+     background-color: #eeecec;
+     margin-left: -180px;
+}
+.domore h2{
+    margin-left: 180px;
+    font-size:40px;
+      margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 60px;
+}
+.domore_card{
+    display:flex;
+    margin-left: 180px;
+    height: 280px;
+    gap:100px;
+}
+.card_domore_left{
+ background-color: white;
+ display: flex; 
+ width: 40%;  
+ margin-bottom: 80px;
+}
+.card_domore_left a{
+    text-decoration: none;
+    color: #000;
+}
+.card_domore_left h3{
+     display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.card_domore_left p{
+    margin-left:170px;
+
+    margin-top: -80px;
+}
+.card_domore_right{
+ background-color: white;
+
+ display: flex; 
+ width: 40%;  
+ margin-bottom: 80px;
+}
+.card_domore_right h3{
+     display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.card_domore_right p{
+    margin-left: -250px;
+    margin-top: 120px;
+}
+.card_domore_right a{
+    text-decoration: none;
+    color: #000;
+}
+.para{
+    margin-top: 50px;
+    width: 80%;
+    font-size: 15px;
+   margin-bottom: 30px;
+   color: #333;
+}
+
+/* ==================== FOOTER EXACT MATCH ==================== */
+.uber_footer_custom {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 100px 50px 100px;
+  margin-left: -190px;
+  margin-right: -268px;
+  margin-bottom: -100px;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footer_top_custom {
+  margin-bottom: 50px;
+}
+
+.footer_logo_custom {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.footer_help_center_custom {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer_help_center_custom:hover {
+  color: #cccccc;
+}
+
+.footer_columns_custom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer_columns_custom h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer_columns_custom p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.footer_columns_custom p:hover {
+  opacity: 0.7;
+}
+
+.footer_social_location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer_social_help {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.footer_social_help a:hover {
+  background-color: #2a2a2a;
+}
+
+.footer_location_help {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer_pill_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 24px;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.footer_pill_btn:hover {
+  background-color: #2a2a2a;
+}
+.footer_apps_help {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.footer_app_badge {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  display: block;
+}
+
+.footer_bottom_help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer_copyright_help {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+}
+
+.footer_legal_help {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer_legal_help a {
+  font-size: 12px;
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer_legal_help a:hover {
+  color: #ffffff;
+}
+/* Hamburger button - hidden on desktop */
+
+.menu_toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile dropdown menu */
+
+.mobile_menu {
+  display: none;
+}
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .home_top_nav {
+    padding: 0 25px;
+  }
+
+  .uber_nav_left {
+    gap: 15px;
+  }
+
+  .uber_nav_links {
+    gap: 2px;
+  }
+
+  .home_nav_right {
+    gap: 5px;
+  }
+
+  .booking_box {
+    left: 5%;
+    width: 42%;
+  }
+
+  .booking_box h1 {
+    font-size: 40px;
+  }
+
+  .image1 img {
+    width: 45%;
+    left: 52%;
+  }
+
+  .explore_page {
+    left: 5%;
+    right: 5%;
+  }
+
+  .card1,
+  .card2 {
+    gap: 20px;
+  }
+
+  .ride_card,
+  .reserve_ride,
+  .intercity,
+  .rental,
+  .bike_card {
+    width: 30%;
+  }
+
+  .plan_page {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .plan_left {
+    width: 60%;
+  }
+
+  .benefits {
+    margin-right: 0;
+    flex: 1;
+  }
+
+  .plan_left button {
+    width: 100%;
+  }
+
+  .uber_one {
+    margin-left: -5%;
+  }
+
+  .uber_one1 {
+    gap: 30px;
+  }
+
+  .ride_friends {
+    margin-left: 30px;
+    width: 45%;
+  }
+
+  .card_travel {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .bussiness img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .bussiness h2 {
+    margin-top: -30%;
+  }
+
+  .domore {
+    margin-left: -5%;
+  }
+
+  .domore h2,
+  .domore_card {
+    margin-left: 5%;
+  }
+
+  .domore_card {
+    gap: 30px;
+  }
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE + MENU */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+
+  .home_top_nav {
+    height: 64px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .uber_brand_logo {
+    font-size: 25px;
+  }
+
+  .uber_nav_links,
+  .home_nav_right {
+    display: none;
+  }
+
+  .menu_toggle {
+    display: block;
+  }
+
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 15px 22px 25px;
+    gap: 0;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 2000;
+  }
+
+  .mobile_menu > a,
+  .mobile_about_btn {
+    display: block;
+    width: 100%;
+    padding: 15px 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+  }
+
+  .mobile_about_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile_about_dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 8px 15px;
+  }
+
+  .mobile_about_dropdown a {
+    color: #333333;
+    text-decoration: none;
+    padding: 12px 5px;
+    font-size: 14px;
+  }
+
+  /* Second Navbar */
+
+  .home_nav {
+    display: none;
+  }
+
+  /* Booking Section */
+
+  .booking_box {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 90%;
+    margin: 100px auto 30px;
+  }
+
+  .booking_box h1 {
+    font-size: 38px;
+  }
+
+  .booking_box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image24_home {
+    right: 10%;
+    margin-left: 0;
+  }
+
+  .image23_home {
+    margin-left: 10px;
+  }
+
+  .price_button_home {
+    width: 100%;
+  }
+
+  /* Hero Image */
+
+  .image1 img {
+    position: relative;
+    display: block;
+    width: 90%;
+    left: auto;
+    top: auto;
+    margin: 30px auto;
+  }
+
+  /* Explore Section */
+
+  .explore_page {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 40px 20px;
+    font-size: 16px;
+  }
+
+  .explore_page h1 {
+    font-size: 28px;
+  }
+
+  .card1,
+  .card2 {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 20px;
+  }
+
+  .ride_card,
+  .reserve_ride,
+  .intercity,
+  .rental,
+  .bike_card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    padding: 10px;
+  }
+
+  .ride_card p,
+  .reserve_ride p,
+  .intercity p,
+  .rental p,
+  .bike_card p {
+    width: 60%;
+    margin: 15px;
+  }
+
+  .ride_card img,
+  .reserve_ride img,
+  .intercity img,
+  .rental img,
+  .bike_card img {
+    position: absolute;
+    width: 90px;
+    height: auto;
+    right: 15px;
+    top: 35px;
+    margin: 0;
+  }
+
+  .ride_card button,
+  .reserve_ride button,
+  .intercity button,
+  .rental button,
+  .bike_card button {
+    position: static;
+    margin: 5px 15px 10px;
+  }
+
+  /* Plan Section */
+
+  .plan h3 {
+    font-size: 28px;
+  }
+
+  .plan_page {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .plan_left {
+    width: 100%;
+    height: auto;
+    padding: 25px 20px;
+  }
+
+  .plan_left h2 {
+    font-size: 27px;
+  }
+
+  .plan_left img {
+    position: static;
+    width: 90px;
+    margin: 15px 0;
+  }
+
+  .plan_left h5 {
+    margin: 20px 0;
+  }
+
+  .choose {
+    flex-direction: column;
+  }
+
+  .plan_left input {
+    width: 100%;
+  }
+
+  .time {
+    margin-left: 0;
+  }
+
+  .plan_left button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .benefits {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .benefits h3 {
+    margin: 10px 0 20px;
+  }
+
+  .benefits img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .benefits p {
+    margin: -50px 0 25px 65px;
+    font-size: 14px;
+  }
+
+  .price {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  /* Uber One */
+
+  .uber_one {
+    margin: 40px 0;
+    position: relative;
+  }
+
+  .background_img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .uber_one h2 {
+    font-size: 30px;
+    margin: -230px 20px 15px;
+  }
+
+  .uber_one p {
+    width: 85%;
+    margin: 15px 20px;
+    font-size: 14px;
+  }
+
+  .uber_one button {
+    margin: 15px 20px;
+  }
+
+  /* Ride with Friends */
+
+  .uber_one1 {
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 20px;
+  }
+
+  .uber_one1 img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .ride_friends {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .uber_one1 h2 {
+    font-size: 29px;
+    margin: 10px 0 20px;
+  }
+
+  /* Travel Cards */
+
+  .use_uber h2 {
+    font-size: 29px;
+    margin: 60px 0 30px;
+  }
+
+  .card_travel {
+    flex-direction: column;
+    width: 100%;
+    gap: 35px;
+  }
+
+  .card_travel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card_travel p {
+    font-size: 15px;
+  }
+
+  /* Business Section */
+
+  .bussiness {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .bussiness img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .bussiness h2 {
+    width: 90%;
+    font-size: 25px;
+    margin: -360px 15px 20px;
+  }
+
+  .bussiness p {
+    width: 90%;
+    margin: 10px 15px;
+  }
+
+  .bussiness ul {
+    margin-left: 35px;
+  }
+
+  .get,
+  .check {
+    margin: 10px 15px;
+  }
+
+  /* FAQ */
+
+  .freq_home {
+    margin-top: 50px;
+  }
+
+  .freq_home h2 {
+    font-size: 26px;
+  }
+
+  .freq_home p {
+    font-size: 14px;
+  }
+
+  /* Do More */
+
+  .domore {
+    margin: 50px 0 0;
+    padding: 20px;
+  }
+
+  .domore h2 {
+    margin: 20px 0 30px;
+    padding-top: 20px;
+    font-size: 28px;
+  }
+
+  .domore_card {
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+    gap: 20px;
+  }
+
+  .card_domore_left,
+  .card_domore_right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card_domore_left h3,
+  .card_domore_right h3 {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .card_domore_left img,
+  .card_domore_right img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+
+  .card_domore_left p {
+    margin: 0 10px 10px;
+  }
+
+  /* Paragraph */
+
+  .para {
+    width: 100%;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  /* Footer */
+
+  .uber_footer_custom {
+    width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  .footer_columns_custom {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer_social_location {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer_bottom_help {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer_legal_help {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .home_top_nav {
+    padding: 0 15px;
+  }
+
+  .booking_box h1 {
+    font-size: 32px;
+  }
+
+  .explore_page h1 {
+    font-size: 24px;
+  }
+
+  .plan_left h2 {
+    font-size: 23px;
+  }
+
+  .uber_one h2 {
+    font-size: 25px;
+  }
+
+  .uber_one1 h2 {
+    font-size: 25px;
+  }
+
+  .use_uber h2 {
+    font-size: 25px;
+  }
+
+  .domore h2 {
+    font-size: 24px;
+  }
+
+  .footer_columns_custom {
+    grid-template-columns: 1fr;
+  }
+}

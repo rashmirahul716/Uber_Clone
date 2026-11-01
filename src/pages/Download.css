@@ -1,0 +1,579 @@
+.download_page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+.download_top_nav{
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  gap: 541px;
+  z-index: 1000;
+}
+.download_nav_links{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+ 
+}
+.download_nav_links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+ padding-left: 8px;
+  border-radius: 20px;
+}
+
+.download_nav_links a{
+ text-decoration: none;
+color:white;}
+
+/* Hero Section */
+.download_hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  gap: 60px;
+}
+
+.download_hero_left {
+  flex: 1;
+  max-width: 450px;
+}
+
+.download_hero_left h1 {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-top: 70px;
+  margin-bottom: 24px;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.download_hero_left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.download_app_badges {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.download_badge_img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.download_hero_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top:60px;
+  margin-left:20px;
+}
+
+.download_hero_qr_img {
+  max-width: 680px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.download_book_section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* Left side */
+.left_uber_download {
+  width: 50%;
+  padding: 90px 50px 0;
+  box-sizing: border-box;
+}
+
+.left_uber_download h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 30px;
+}
+
+.left_uber_download p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Pickup and Dropoff */
+.download_route_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.download_input_row {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.download_input_row input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  color: #000;
+  padding: 0 50px 0 54px;
+  box-sizing: border-box;
+}
+
+.download_input_row input::placeholder {
+  color: #555;
+  opacity: 1;
+}
+
+.download_input_row input:focus {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+/* Route line */
+.image_line {
+  position: absolute;
+  top: 20px;
+  height: 98px;
+  width: 50px;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Clear icon */
+.image24 {
+  position: absolute;
+  right: 18px;
+  top: 15%;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Buttons */
+.download_buttons_row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 18px;
+}
+
+.price_button_download {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 17px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.price_button:hover {
+  background: #333;
+}
+
+.download_schedule_btn {
+  background: #eee;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 17px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download_schedule_btn:hover {
+  background: #ddd;
+}
+
+/* Right side image */
+.right_uber_download {
+  width: 45%;
+
+}
+
+.download_car_image {
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+    border-radius:10px;
+  display: block;
+}
+/* Suggestions section */
+.download_suggestions {
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+  padding: 0 40px;
+}
+
+/* Do more in the apps (3 QR codes) */
+.download_do_more_section {
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 0 40px;
+}
+
+.download_do_more_section h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.download_do_more_section p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.qr_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.qr_1, .qr_2, .qr_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qr_1 img, .qr_2 img, .qr_3 img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.qr_1 h3, .qr_2 h3, .qr_3 h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.download_footer_custom{
+  width:100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 12% 80px;
+}
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .download_top_nav {
+    width: 100%;
+    padding: 0 25px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .download_nav_links {
+    gap: 15px;
+  }
+
+  .download_hero_section {
+    padding: 70px 30px 40px;
+    gap: 30px;
+  }
+
+  .download_hero_left h1 {
+    font-size: 40px;
+  }
+
+  .download_hero_right {
+    margin-left: 0;
+  }
+
+  .left_uber_download {
+    padding: 60px 25px 0;
+  }
+
+  .left_uber_download h2 {
+    font-size: 32px;
+  }
+
+  .download_buttons_row {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .price_button_download,
+  .download_schedule_btn {
+    padding: 14px 20px;
+  }
+
+  .download_car_image {
+    height: 480px;
+  }
+
+  .download_do_more_section {
+    padding: 0 30px;
+  }
+
+  .qr_card {
+    gap: 20px;
+  }
+
+  .download_footer_custom {
+    padding: 40px 8% 60px;
+  }
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .download_top_nav {
+    height: 64px;
+    width: 100%;
+    padding: 0 18px;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .download_nav_links {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .download_nav_links a {
+    font-size: 12px;
+    padding-left: 3px;
+  }
+
+  /* Hero section */
+  .download_hero_section {
+    flex-direction: column;
+    padding: 70px 20px 40px;
+    gap: 25px;
+  }
+
+  .download_hero_left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .download_hero_left h1 {
+    font-size: 34px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  .download_hero_left p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .download_app_badges {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .download_badge_img {
+    height: 38px;
+    max-width: 145px;
+  }
+
+  .download_hero_right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .download_hero_qr_img {
+    max-width: 100%;
+  }
+
+  /* Booking section */
+  .download_book_section {
+    flex-direction: column;
+    padding: 0 20px 50px;
+    gap: 30px;
+  }
+
+  .left_uber_download {
+    width: 100%;
+    padding: 30px 0 0;
+  }
+
+  .left_uber_download h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+
+  .left_uber_download p {
+    font-size: 15px;
+  }
+
+  .download_route_inputs {
+    max-width: 100%;
+  }
+
+  .download_input_row {
+    height: 58px;
+  }
+
+  .download_input_row input {
+    font-size: 15px;
+    padding: 0 45px 0 45px;
+  }
+
+  .image_line {
+    width: 40px;
+  }
+
+  .download_buttons_row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .price_button_download,
+  .download_schedule_btn {
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+
+  .right_uber_download {
+    width: 100%;
+  }
+
+  .download_car_image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  /* Suggestions */
+  .download_suggestions {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  /* QR section */
+  .download_do_more_section {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+
+  .download_do_more_section h2 {
+    font-size: 28px;
+  }
+
+  .download_do_more_section p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .qr_card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .qr_1 img,
+  .qr_2 img,
+  .qr_3 img {
+    max-width: 220px;
+  }
+
+  .qr_1 h3,
+  .qr_2 h3,
+  .qr_3 h3 {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .download_footer_custom {
+    padding: 35px 20px 50px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .download_hero_left h1 {
+    font-size: 29px;
+  }
+
+  .left_uber_download h2 {
+    font-size: 26px;
+  }
+
+  .download_buttons_row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .price_button_download,
+  .download_schedule_btn {
+    width: 100%;
+  }
+
+  .download_nav_links {
+    gap: 6px;
+  }
+
+  .download_nav_links a {
+    font-size: 11px;
+  }
+
+  .download_do_more_section h2 {
+    font-size: 25px;
+  }
+}

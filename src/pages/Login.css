@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login_uber{
+    background-color: black;
+    display: flex;
+}
+.image4{
+    margin-left: 4%;
+    padding-left: 100px;
+}
+.login_box{
+    width: 330px;
+    margin: 40px auto 0 auto;
+}
+.login_box h2{
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+.login_input{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #eae9e9;
+    color: #999;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+}
+.continue_button {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.continue_button:hover{
+    background-color: #212020;
+}
+.or{
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 17px;
+}
+.google_button{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #eae9e9;
+    color: #080808;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+.google_button:hover{
+    background-color: #d1d1d1;
+}
+.apple_button{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #eae9e9;
+    color: #080808;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+.apple_button:hover{
+     background-color: #d1d1d1;
+}
+.google_button img{
+    position: absolute;
+    left: 43%;
+    width: 20px;
+    height: auto;
+}
+.apple_button img{
+    position: absolute;
+    left: 43%;
+    width: 20px;
+    height: auto;
+}
+.QR_button{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #eae9e9;
+    color: #080808;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+}
+.QR_button:hover{
+    background-color: aliceblue;
+}
+.QR_button img{
+    position: absolute;
+    left: 43%;
+    width: 20px;
+    height: auto;
+}
+.login_box p{
+    margin-top: 25px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+@media screen and (max-width: 480px){
+    .login_uber{
+        height:70px;
+    } 
+    .image4{
+        margin-left:20px; 
+    }
+    .image4 img{
+        width:60px; 
+    } 
+    .login_box{ 
+        width:90%;
+        margin: 30px auto 0 auto; 
+    }
+    .login_box h2{
+        font-size:21px; 
+        margin-top:0; 
+        margin-bottom:20px; 
+    } 
+    .login_input, 
+    .continue_button, 
+    .google_button, 
+    .apple_button, 
+    .QR_button{ 
+        height: 48px; 
+    }
+    .google_button, 
+    .apple_button, 
+    .QR_button{ 
+        font-size:16px; 
+    }
+    .or{ 
+        font-size:12px; 
+    } 
+    .login_box p{
+        font-size:14px;
+    } 
+    .google_button img,
+    .apple_button img,
+    .QR_button img {
+        left: 20%;
+        width: 20px;
+    }
+}

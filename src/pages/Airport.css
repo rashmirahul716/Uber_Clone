@@ -1,0 +1,95 @@
+.airport_left{
+  position: relative;
+  top: 100px;
+  left: 150px;
+  width: 29%;
+}
+.airport_button{
+  background: none;
+  border-style:none;
+  color: #545454;
+  font-size:17px;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+.airports{
+  margin-top: -80px;
+  margin-left: 150px;
+}
+.airport_left h1{
+  font-size: 38px;
+  margin-bottom: 16px;
+  margin-top: 10%;
+}
+.airport_left p{
+  font-size: 16px;
+  color: #545454;
+  margin-bottom: 32px;
+}
+.airport_left input{
+  width:85%;
+    height:55px;
+    border: none;
+    outline:none;
+    background-color: #eeeeee;
+    border-radius:12px;
+    padding-left: 55px;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.image24{
+     position: absolute;
+    margin-left: 330px;
+    margin-top: 15px;
+    z-index: 9;
+}
+.image23 {
+    z-index: 9;
+    margin-top: -60px;
+    margin-left: 10px;
+    position: absolute;
+}
+.price_button{
+    height:45px;
+    background-color: #000;
+    color: white;
+    border:none;
+    border-radius:9px;
+    padding:0 29px;
+    font-size:16px;
+    font-weight:500;
+    margin-top: 30px;
+}
+.price_button:hover{
+    background-color: #333;
+}
+.schedule {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left:30px;
+}
+.schedule:hover{
+background-color: #dcd9d9;
+}
+.airport_page{
+  display: flex;
+}
+.image32 {
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-top: 200px;
+}
+.airport_ride{
+  margin-top: 100px;
+}
+.airport_footer_custom{
+  width:100%;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 12% 80px;
+}

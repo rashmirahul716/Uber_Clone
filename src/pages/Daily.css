@@ -1,0 +1,231 @@
+.image26{
+    margin-top: 100px;
+    margin-left: 45%;
+}
+.daily  h1{
+    font-size: 55px;
+  width: 36%;
+  margin-top: -24%;
+  margin-left: 10%;
+}
+
+.daily  p {
+  width: 30%;
+   margin-top: 20px;
+  margin-left: 10%;
+  color: #020202;
+}
+
+ .get_button {
+  
+  margin-left: 12%;
+  margin-top: 30px;
+  padding: 15px;
+  background: #060606;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+.get_button:hover {
+  background: #272727;
+}
+.uses {
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+ background-color: #020202;
+}
+.image27{
+  border-radius: 200px;
+  margin-left: 130px;
+}
+.image28{
+  border-radius: 200px;
+  margin-left: 110px;
+}
+.image29{
+  background-color: #eeeeee;
+   border-radius: 100px;
+  margin-left: 130px;
+}
+.image30{
+   background-color: #eeeeee;
+   border-radius: 500px;
+  margin-left: 130px;
+}
+.uses{
+  height: 220px;
+}
+.uses h3 {
+    color: #eeeeee;
+  margin-left:130px ;
+}
+
+.uses p {
+  margin-left: 130px;
+  color: #9d9c9c;
+  font-size: 14px;
+}
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .image26 {
+    width: 48%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 48%;
+  }
+
+  .daily h1 {
+    font-size: 40px;
+    width: 43%;
+    margin-top: -28%;
+    margin-left: 7%;
+  }
+
+  .daily p {
+    width: 42%;
+    margin-left: 7%;
+  }
+
+  .get_button {
+    margin-left: 7%;
+  }
+
+  .uses {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+  }
+
+  .image27,
+  .image28,
+  .image29,
+  .image30 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .uses h3,
+  .uses p {
+    margin-left: 0;
+  }
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  .image26 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 90px auto 25px;
+  }
+
+  .daily h1 {
+    width: 90%;
+    font-size: 34px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+
+  .daily p {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 15px;
+  }
+
+  .get_button {
+    display: block;
+    margin: 25px auto 30px;
+    padding: 13px 25px;
+  }
+
+  .uses {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .image27,
+  .image28,
+  .image29,
+  .image30 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 12px;
+  }
+
+  .uses h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .uses p {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+  .image26 {
+    width: 95%;
+    margin-top: 80px;
+  }
+
+  .daily h1 {
+    width: 92%;
+    font-size: 29px;
+  }
+
+  .daily p {
+    width: 92%;
+    font-size: 14px;
+  }
+
+  .get_button {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+
+  .uses {
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  .image27,
+  .image28,
+  .image29,
+  .image30 {
+    width: 85px;
+    height: 85px;
+  }
+}
