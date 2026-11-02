@@ -244,7 +244,7 @@ function Terms() {
       <div className="terms_disclaimer_container">
         <p>¹Your upfront price may change due to factors such as adding stops, updating your destination, significant changes to the route or duration of the trip, or passing through a toll that was not factored into the upfront price. Upfront price not available on meter taxi trips. Refer to the app for pricing applicable to your trip.<br /><br />²Uber doesn’t guarantee that a driver will accept your ride request. Your ride is confirmed once you receive your driver details. Uber Reserve is available in select cities.<br /><br />³Cancellation fees for Uber Reserve are higher than with on-demand. You may be charged a cancellation fee if you cancel a Reserve trip, depending on the circumstances. Policies vary by location and ride type. Refer to the Uber Reserve Terms of Use and policy in your Uber app for details.<br /><br />Some features are only available in select cities, and the trips applicable for Uber Reserve will vary per city. Be sure to check the app for availability.</p>
       </div>
- <footer className="terms_footer_custom">
+ <footer className="uber_footer_custom">
                <div className="footer_top_custom">
                  <Link to="/Uber" className="footer_logo_custom">Uber</Link>
                  <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
@@ -252,36 +252,52 @@ function Terms() {
                <div className="footer_columns_custom">
                  <div>
                    <h3>Company</h3>
-                   <p>About us</p>
-                   <p>Our offerings</p>
-                   <p>Newsroom</p>
-                   <p>Investors</p>
-                   <p>Blog</p>
-                   <p>Careers</p>
-                   <p>Uber One</p>
+                   <Link to='https://www.uber.com/in/en/about/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'>  <p>About us</p></Link>
+                   <Link to='https://www.uber.com/in/en/about/uber-offerings/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'> <p>Our offerings</p></Link>
+                   <Link to='uber.com/in/en/newsroom/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Newsroom</p></Link>
+                      <Link to='https://investor.uber.com/home/default.aspx'> <p>Investors</p></Link>
+                         <Link to='https://www.uber.com/in/en/blog/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Blog</p></Link>
+                            <Link to='https://jobs.uber.com/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>     <p>Careers</p></Link>
+                               <Link to='https://www.uber.com/in/en/uber-one/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber One</p></Link>
+                               
+                 
+                  
+                  
+                   
+              
+                  
                  </div>
                  <div>
                    <h3>Products</h3>
-                   <p>Ride</p>
-                   <p>Drive</p>
-                   <p>Eat</p>
-                   <p>Uber for Business</p>
-                   <p>Uber Freight</p>
-                   <p>Gift cards</p>
-                   <p>Uber Health</p>
-                   <p>Uber Advertising</p>
-                 </div>
+                   <Link to='/Home'><p>Ride</p></Link>
+                   <Link to='https://www.uber.com/in/en/drive/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Drive</p></Link>
+                   <Link to='https://www.ubereats.com/in?marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d&uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Eat</p></Link>
+                   <Link to='https://www.uber.com/in/en/business/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber for Business</p></Link>
+                   <Link to='https://www.uberfreight.com/en-US?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber Freight</p></Link>
+                   <Link to='https://www.uber.com/in/en/gift-cards/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>    <p>Gift cards</p></Link>
+                   <Link to='https://www.uberhealth.com/in/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e&marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d'> <p>Uber Health</p></Link>
+                   <Link to='https://www.uber.com/in/en/advertising/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>                 
+                   <p>Uber Advertising</p></Link>
+                   </div>
+ 
                  <div>
-                   <h3>Global citizenship</h3>
-                   <p>Safety</p>
-                   <p>Sustainability</p>
+                    <h3>Global citizenship</h3>
+                   <Link to='https://www.uber.com/in/en/safety/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>  <p>Safety</p></Link>
+                  <Link to='https://www.uber.com/in/en/about/sustainability/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Sustainability</p></Link>
+                 
+                  
                  </div>
                  <div>
                    <h3>Travel</h3>
-                   <p>Reserve</p>
-                   <p>Airports</p>
-                   <p>Hotels</p>
-                   <p>Cities</p>
+                   <Link to='/Login'><p>Reserve</p></Link>
+                     <Link to='https://www.uber.com/in/en/airports/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>   <p>Airports</p></Link>
+                       <Link to='https://www.uber.com/in/en/hotels/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Hotels</p></Link>
+                         <Link to='Search_cities'>  <p>Cities</p></Link>
+ 
+                   
+                
+           
+                 
                  </div>
                </div>
                <div className="footer_social_location">
@@ -292,7 +308,8 @@ function Terms() {
                    <Link to="https://x.com/uber"> <img src={image49} alt="twitter" /></Link>
                  </div>
                  <div className="footer_location_help">
-                   <button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button>
+                   <Link to='En'><button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button></Link>
+                   
                    <button type="button" className="footer_pill_btn"><img src={image66} alt="location" width="18px" height="auto" />Kochi</button>
                  </div>
                </div>

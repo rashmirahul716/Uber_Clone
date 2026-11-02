@@ -24,6 +24,10 @@ import image73 from '../assets/explore_image_globe_2.webp';
 import image74 from '../assets/go_grren.webp';
 import image75 from '../assets/out_door.webp';
 import image76 from '../assets/go_further.webp';
+import image100 from '../assets/image100.webp';
+import image101 from '../assets/uber_shuttle.webp'
+import image102 from '../assets/uber_share.webp'
+import image103 from '../assets/uber_green.webp'
 
 function Explore() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -224,7 +228,7 @@ function Explore() {
 
           <div className="explore_tabs_header">
             <button className='featured'onClick={() => setActiveTab('Featured')}>Featured</button>
-            <button className='2_3_wheel'onClick={() => setActiveTab('2 or 3 wheels')}>2 or 3 wheels</button>
+            <button className='wheel'onClick={() => setActiveTab('2 or 3 wheels')}>2 or 3 wheels</button>
             <button className='extra_room'onClick={() => setActiveTab('Extra room')}>Extra room</button>
           </div>
 
@@ -254,7 +258,93 @@ function Explore() {
               <Link to="/Ride" className="explore_learn_more_link">Learn more about UberX</Link>
             </div>
           </div>
-        </section>
+              </section>
+          <section class="rides-section">
+    <div class="container">
+    
+      <div class="rides-header">
+        <h2 class="rides-title">Rides around the world</h2>
+        <p class="rides-subtitle">
+          There’s more than one way to move with Uber, no matter where you are or where you’re headed next. Check the app to see which ride options are available near you.*
+        </p>
+      </div>
+
+  
+      <div class="tabs-wrapper">
+        <ul class="tabs-list">
+          <li class="tab-item active">Featured</li>
+          <li class="tab-item">2 or 3 wheels</li>
+          <li class="tab-item">Extra room</li>
+        </ul>
+      </div>
+
+     
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-image-bg">
+            <img 
+              src={image101}
+              alt="Uber Shuttle"
+             
+            />
+          </div>
+          <h3 class="card-title">Uber Shuttle</h3>
+          <p class="card-description">Shared A/C rides at affordable prices</p>
+        <p>Learn more about Uber Shuttle</p>
+        </div>
+
+        <div class="card">
+          <div class="card-image-bg">
+            <img 
+              src={image102}
+              alt="UberX Share"
+             
+            />
+          </div>
+          <h3 class="card-title">UberX Share</h3>
+          <p class="card-description">Share the ride with up to one co-rider at a time</p>
+          <p>Learn more about UberX Share</p>
+        </div>
+        <div class="card">
+          <div class="card-image-bg">
+            <img 
+              src={image103}
+              alt="Uber Green"
+              />
+          </div>
+          <h3 class="card-title">Uber Green</h3>
+          <p class="card-description">Sustainable rides in electric vehicles</p>
+          <p>Learn more about Uber Green</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+    
+        <section class="shuttle-section">
+    <div class="container">
+      <div class="shuttle-grid">
+        
+        <div class="shuttle-content">
+          <h1 class="shuttle-title">Commute in Comfort with Uber Shuttle</h1>
+          <p class="shuttle-text">
+            Uber Shuttle is a new way to enjoy a comfortable, safe, and convenient commute in Delhi. There’s no need to wait to hail down and squeeze onto a crowded bus, spend hours in the metro or drive in peak traffic.
+          </p>
+          <Link to='/Uber'className='btn-black'>Explore Uber Shuttle</Link>
+
+        </div>
+
+        <div class="shuttle-image-wrapper">
+          <img 
+            src={image100}
+            alt="Uber Shuttle Commute"/>
+        </div>
+
+      </div>
+    </div>
+  </section>
         <section className="explore_globe_section">
           <h2 className="explore_section_heading">Explore the globe with Uber</h2>
 
@@ -330,72 +420,88 @@ function Explore() {
             Uber reserves the right to alter, suspend or withdraw the promotion offer in the future at its sole discretion without any prior notice. Terms and conditions apply.
           </p>
         </section>
-      </main>
-       <footer className="explore_footer_custom">
-                     <div className="footer_top_custom">
-                       <Link to="/Uber" className="footer_logo_custom">Uber</Link>
-                       <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
-                     </div>
-                     <div className="footer_columns_custom">
-                       <div>
-                         <h3>Company</h3>
-                         <p>About us</p>
-                         <p>Our offerings</p>
-                         <p>Newsroom</p>
-                         <p>Investors</p>
-                         <p>Blog</p>
-                         <p>Careers</p>
-                         <p>Uber One</p>
-                       </div>
-                       <div>
-                         <h3>Products</h3>
-                         <p>Ride</p>
-                         <p>Drive</p>
-                         <p>Eat</p>
-                         <p>Uber for Business</p>
-                         <p>Uber Freight</p>
-                         <p>Gift cards</p>
-                         <p>Uber Health</p>
-                         <p>Uber Advertising</p>
-                       </div>
-                       <div>
+      </main><footer className="uber_footer_custom">
+                    <div className="footer_top_custom">
+                      <Link to="/Uber" className="footer_logo_custom">Uber</Link>
+                      <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
+                    </div>
+                    <div className="footer_columns_custom">
+                      <div>
+                        <h3>Company</h3>
+                        <Link to='https://www.uber.com/in/en/about/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'>  <p>About us</p></Link>
+                        <Link to='https://www.uber.com/in/en/about/uber-offerings/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'> <p>Our offerings</p></Link>
+                        <Link to='uber.com/in/en/newsroom/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Newsroom</p></Link>
+                           <Link to='https://investor.uber.com/home/default.aspx'> <p>Investors</p></Link>
+                              <Link to='https://www.uber.com/in/en/blog/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Blog</p></Link>
+                                 <Link to='https://jobs.uber.com/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>     <p>Careers</p></Link>
+                                    <Link to='https://www.uber.com/in/en/uber-one/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber One</p></Link>
+                                    
+                      
+                       
+                       
+                        
+                   
+                       
+                      </div>
+                      <div>
+                        <h3>Products</h3>
+                        <Link to='/Home'><p>Ride</p></Link>
+                        <Link to='https://www.uber.com/in/en/drive/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Drive</p></Link>
+                        <Link to='https://www.ubereats.com/in?marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d&uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Eat</p></Link>
+                        <Link to='https://www.uber.com/in/en/business/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber for Business</p></Link>
+                        <Link to='https://www.uberfreight.com/en-US?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber Freight</p></Link>
+                        <Link to='https://www.uber.com/in/en/gift-cards/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>    <p>Gift cards</p></Link>
+                        <Link to='https://www.uberhealth.com/in/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e&marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d'> <p>Uber Health</p></Link>
+                        <Link to='https://www.uber.com/in/en/advertising/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>                 
+                        <p>Uber Advertising</p></Link>
+                        </div>
+      
+                      <div>
                          <h3>Global citizenship</h3>
-                         <p>Safety</p>
-                         <p>Sustainability</p>
-                       </div>
-                       <div>
-                         <h3>Travel</h3>
-                         <p>Reserve</p>
-                         <p>Airports</p>
-                         <p>Hotels</p>
-                         <p>Cities</p>
-                       </div>
-                     </div>
-                     <div className="footer_social_location">
-                       <div className="footer_social_help">
-                         <Link to='https://www.linkedin.com/company/uber/'> <img src={image46} alt="linkedin" /></Link>
-                         <Link to="https://www.youtube.com/user/uber">  <img src={image47} alt="youtube" /></Link>
-                         <Link to="https://www.instagram.com/uber/"><img src={image48} alt="instagram" /></Link>
-                         <Link to="https://x.com/uber"> <img src={image49} alt="twitter" /></Link>
-                       </div>
-                       <div className="footer_location_help">
-                         <button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button>
-                         <button type="button" className="footer_pill_btn"><img src={image66} alt="location" width="18px" height="auto" />Kochi</button>
-                       </div>
-                     </div>
-                     <div className="footer_apps_help">
-                       <Link to="https://play.google.com/store/apps/details?id=com.ubercab"><img src={image44} alt="google_play" className="footer_app_badge" /></Link>
-                       <Link to="https://apps.apple.com/app/uber/id368677368"> <img src={image45} alt="app_store" className="footer_app_badge" /></Link>
-                     </div>
-                     <div className="footer_bottom_help">
-                       <p className="footer_copyright_help">© 2026 Uber Technologies Inc.</p>
-                       <div className="footer_legal_help">
-                         <Link to="https://www.uber.com/legal/privacy/">Privacy</Link>
-                         <Link to="https://www.uber.com/accessibility/">Accessibility</Link>
-                         <Link to="https://www.uber.com/legal/">Terms</Link>
-                       </div>
-                     </div>
-                   </footer>
+                        <Link to='https://www.uber.com/in/en/safety/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>  <p>Safety</p></Link>
+                       <Link to='https://www.uber.com/in/en/about/sustainability/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Sustainability</p></Link>
+                      
+                       
+                      </div>
+                      <div>
+                        <h3>Travel</h3>
+                        <Link to='/Login'><p>Reserve</p></Link>
+                          <Link to='https://www.uber.com/in/en/airports/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>   <p>Airports</p></Link>
+                            <Link to='https://www.uber.com/in/en/hotels/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Hotels</p></Link>
+                              <Link to='Search_cities'>  <p>Cities</p></Link>
+      
+                        
+                     
+                
+                      
+                      </div>
+                    </div>
+                    <div className="footer_social_location">
+                      <div className="footer_social_help">
+                        <Link to='https://www.linkedin.com/company/uber/'> <img src={image46} alt="linkedin" /></Link>
+                        <Link to="https://www.youtube.com/user/uber">  <img src={image47} alt="youtube" /></Link>
+                        <Link to="https://www.instagram.com/uber/"><img src={image48} alt="instagram" /></Link>
+                        <Link to="https://x.com/uber"> <img src={image49} alt="twitter" /></Link>
+                      </div>
+                      <div className="footer_location_help">
+                        <Link to='En'><button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button></Link>
+                        
+                        <button type="button" className="footer_pill_btn"><img src={image66} alt="location" width="18px" height="auto" />Kochi</button>
+                      </div>
+                    </div>
+                    <div className="footer_apps_help">
+                      <Link to="https://play.google.com/store/apps/details?id=com.ubercab"><img src={image44} alt="google_play" className="footer_app_badge" /></Link>
+                      <Link to="https://apps.apple.com/app/uber/id368677368"> <img src={image45} alt="app_store" className="footer_app_badge" /></Link>
+                    </div>
+                    <div className="footer_bottom_help">
+                      <p className="footer_copyright_help">© 2026 Uber Technologies Inc.</p>
+                      <div className="footer_legal_help">
+                        <Link to="https://www.uber.com/legal/privacy/">Privacy</Link>
+                        <Link to="https://www.uber.com/accessibility/">Accessibility</Link>
+                        <Link to="https://www.uber.com/legal/">Terms</Link>
+                      </div>
+                    </div>
+                  </footer>
     </div>
   );
 }

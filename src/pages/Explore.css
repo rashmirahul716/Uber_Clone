@@ -139,15 +139,185 @@ margin-bottom: 20px;
   background: transparent;
   color: #000;
   border: none;
-  border-bottom: 1px solid #999;
   padding: 8px 0;
   font-size: 18px;
   cursor: pointer;
 }
 
-.explore_download_app_link:hover {
-  border-bottom: 2px solid #000;
-}
+    /* =========================================
+       2. SECTION 1: UBER SHUTTLE FEATURE
+       ========================================= */
+    .shuttle-section {
+      padding: 80px 0;
+    }
+
+    .shuttle-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .shuttle-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+    }
+
+    .shuttle-text {
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .btn-black {
+      display: inline-block;
+      background-color: #000000;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-black:hover {
+      background-color: #333333;
+    }
+
+    .shuttle-image-wrapper {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .shuttle-image-wrapper img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* =========================================
+       3. SECTION 2: RIDES AROUND THE WORLD
+       ========================================= */
+    .rides-section {
+      padding: 40px 0 80px 0;
+    }
+
+    .rides-header {
+      margin-bottom: 32px;
+    }
+
+    .rides-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+
+    .rides-subtitle {
+      font-size: 15px;
+      color: #333333;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    /* TAB NAVIGATION */
+    .tabs-wrapper {
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 40px;
+    }
+
+    .tabs-list {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .tab-item {
+      padding-bottom: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #000000;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tab-item.active {
+      color: #000000;
+    }
+
+    .tab-item.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #000000;
+    }
+
+    /* CARDS GRID */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-image-bg {
+      background-color: #f6f6f6;
+      border-radius: 12px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .card-image-bg img {
+      max-width: 80%;
+      max-height: 160px;
+      object-fit: contain;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 16px;
+      min-height: 42px; /* Keeps links aligned across cards */
+    }
+
+    .card-link {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      align-self: flex-start;
+      transition: color 0.2s ease;
+    }
+
+    .card-link:hover {
+      color: #555555;
+    }
 
 /* Right Image */
 .explore_hero_right {
@@ -280,6 +450,34 @@ margin-bottom: 20px;
 .explore_world_rides_section {
   margin-bottom: 90px;
 }
+.wheel{
+   background-color: white;
+  font-weight: 300;
+ border: none;
+
+ font-size: 16px;
+  padding: 10px;
+
+}
+.extra_room{
+   background-color: white;
+  font-weight: 300;
+ border: none;
+ font-size: 16px;
+
+
+  padding: 10px;
+
+}
+.featured{
+  text-decoration:2px solid underline;
+  background-color: white;
+  font-weight: 300;
+ border: none;
+ font-size: 16px;
+
+  padding: 10px;
+}
 
 .explore_world_desc {
   font-size: 16px;
@@ -293,7 +491,6 @@ margin-bottom: 20px;
   display: flex;
   gap: 32px;
   padding: 10px;
-  border-bottom: 1px solid #e2e2e2;
   margin-bottom: 40px;
 }
 
@@ -451,7 +648,7 @@ margin-bottom: 20px;
 .explore_info_card p {
   font-size: 14px;
   line-height: 1.5;
-  color: #555555;
+  color: #000000;
   margin: 0 0 16px 0;
   flex: 1;
 }
@@ -480,8 +677,10 @@ margin-bottom: 20px;
 }
 
 .explore_action_title {
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 700;
+  color: #000;
+  width:50%;
 }
 
 .explore_action_arrow {
@@ -491,7 +690,7 @@ margin-bottom: 20px;
 
 /* Disclaimer text */
 .explore_disclaimer_section {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.6;
   color: #666666;
   border-top: 1px solid #eeeeee;
@@ -537,18 +736,394 @@ margin-bottom: 20px;
   padding: 50px 12% 80px;
 }
 
-/* Responsive tweaks */
+/* =====================================
+   TABLET RESPONSIVE - 900px
+===================================== */
+
 @media (max-width: 900px) {
-  .explore_suggestions_grid,
-  .explore_vehicle_cards_row,
-  .explore_info_three_cards,
-  .explore_globe_cards_grid,
-  .explore_two_action_cards {
-    grid-template-columns: 1fr;
+
+  .explore_top_nav {
+    width: 100%;
+    gap: 20px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    margin-top: 0;
   }
 
+  .explore_main_content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 100px 30px 60px;
+    box-sizing: border-box;
+  }
+
+  /* Hero */
   .explore_hero_section {
-    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+    margin-top: 0;
+  }
+
+  .explore_hero_title {
+    font-size: 42px;
+  }
+
+  .explore_hero_img {
+    height: 450px;
+  }
+
+  .explore_hero_cta_row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Suggestions */
+  .explore_suggestions_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Vehicle cards */
+  .explore_vehicle_cards_row,
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* Shuttle */
+  .shuttle-grid {
+    gap: 30px;
+  }
+
+  .shuttle-title {
+    font-size: 30px;
+  }
+
+  .shuttle-image-wrapper img {
+    height: 300px;
+  }
+
+  /* Globe */
+  .explore_globe_cards_grid {
+    gap: 25px;
+  }
+
+  /* Info cards */
+  .explore_info_three_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Action cards */
+  .explore_action_title {
+    font-size: 28px;
+    width: 75%;
+  }
+
+  /* Footer */
+  .explore_footer_custom {
+    padding: 40px 7% 60px;
+    box-sizing: border-box;
   }
 }
 
+
+/* =====================================
+   MOBILE RESPONSIVE - 600px
+===================================== */
+
+@media (max-width: 600px) {
+
+  /* Main content */
+  .explore_main_content {
+    width: 100%;
+    margin: 0;
+    padding: 90px 20px 40px;
+  }
+
+  /* Hero section */
+  .explore_hero_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0 35px;
+    margin-top: 0;
+    gap: 25px;
+  }
+
+  .explore_hero_left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .explore_hero_title {
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+  }
+
+  .explore_hero_subtitle,
+  .explore_hero_caption {
+    font-size: 15px;
+  }
+
+  .explore_route_inputs {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .explore_route_inputs input {
+    height: 58px;
+    font-size: 15px;
+    padding: 0 45px;
+  }
+
+  .explore_route_inputs .image24 {
+    width: 35px;
+    right: 10px;
+  }
+
+  .explore_route_inputs .image23 {
+    height: 100px;
+    top: -30px;
+  }
+
+  .explore_hero_cta_row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .explore_see_prices_btn {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .explore_download_app_link {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .explore_hero_right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .explore_hero_img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+  }
+
+  /* Section headings */
+  .explore_section_heading {
+    font-size: 28px;
+  }
+
+  /* Suggestions */
+  .explore_suggestions_section {
+    margin-bottom: 50px;
+  }
+
+  .explore_suggestions_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .explore_sug_card {
+    min-height: 150px;
+    padding: 18px;
+  }
+
+  .explore_sug_text p {
+    font-size: 13px;
+  }
+
+  .explore_sug_image img {
+    width: 85px;
+  }
+
+  /* Rides around the world */
+  .explore_world_rides_section {
+    margin-bottom: 50px;
+  }
+
+  .explore_world_desc {
+    font-size: 14px;
+  }
+
+  .explore_tabs_header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .featured,
+  .wheel,
+  .extra_room {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+
+  .explore_vehicle_cards_row,
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .explore_vehicle_img_box {
+    height: 160px;
+  }
+
+  .card-image-bg {
+    height: 200px;
+  }
+
+  /* Shuttle section */
+  .shuttle-section {
+    padding: 35px 0;
+  }
+
+  .shuttle-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .shuttle-content {
+    width: 100%;
+  }
+
+  .shuttle-title {
+    font-size: 28px;
+  }
+
+  .shuttle-text {
+    font-size: 14px;
+  }
+
+  .shuttle-image-wrapper {
+    width: 100%;
+  }
+
+  .shuttle-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  /* Globe section */
+  .explore_globe_section {
+    margin-bottom: 50px;
+  }
+
+  .explore_globe_cards_grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .explore_globe_img_wrap img {
+    height: auto;
+    max-height: 260px;
+  }
+
+  .explore_globe_card h3 {
+    font-size: 18px;
+  }
+
+  .explore_globe_card p {
+    font-size: 14px;
+  }
+
+  /* Three information cards */
+  .explore_info_three_cards {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+
+  .explore_info_img_wrap img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  /* Action cards */
+  .explore_two_action_cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .explore_action_title {
+    font-size: 24px;
+    width: 85%;
+  }
+
+  .explore_action_arrow {
+    font-size: 25px;
+  }
+
+  /* Disclaimer */
+  .explore_disclaimer_section {
+    font-size: 13px;
+    padding-top: 20px;
+  }
+
+  /* Footer */
+  .explore_footer_custom {
+    width: 100%;
+    padding: 35px 20px 45px;
+    box-sizing: border-box;
+  }
+}
+
+
+/* =====================================
+   SMALL MOBILE - 380px
+===================================== */
+
+@media (max-width: 380px) {
+
+  .explore_main_content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .explore_hero_title {
+    font-size: 30px;
+  }
+
+  .explore_section_heading {
+    font-size: 25px;
+  }
+
+  .explore_sug_card {
+    padding: 14px;
+  }
+
+  .explore_sug_image img {
+    width: 70px;
+  }
+
+  .shuttle-title {
+    font-size: 24px;
+  }
+
+  .explore_action_title {
+    font-size: 21px;
+  }
+
+  .explore_tabs_header {
+    gap: 4px;
+  }
+
+  .featured,
+  .wheel,
+  .extra_room {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
