@@ -757,6 +757,10 @@
   font-weight: 600;
   text-decoration: none;
 }
+.uber_footer{
+  width: 100%;
+  padding: 100px;
+}
 
 .uber_bottom_btn:hover {
   text-decoration: underline;

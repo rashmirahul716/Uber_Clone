@@ -278,7 +278,7 @@ const [answer6, setAnswer6] = useState('');
 </div>
 </div>
 
-     <footer className="uber_footer_custom">
+     <footer className="learn_footer_custom">
                    <div className="footer_top_custom">
                      <Link to="/Uber" className="footer_logo_custom">Uber</Link>
                      <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>

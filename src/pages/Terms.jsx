@@ -244,7 +244,7 @@ function Terms() {
       <div className="terms_disclaimer_container">
         <p>¹Your upfront price may change due to factors such as adding stops, updating your destination, significant changes to the route or duration of the trip, or passing through a toll that was not factored into the upfront price. Upfront price not available on meter taxi trips. Refer to the app for pricing applicable to your trip.<br /><br />²Uber doesn’t guarantee that a driver will accept your ride request. Your ride is confirmed once you receive your driver details. Uber Reserve is available in select cities.<br /><br />³Cancellation fees for Uber Reserve are higher than with on-demand. You may be charged a cancellation fee if you cancel a Reserve trip, depending on the circumstances. Policies vary by location and ride type. Refer to the Uber Reserve Terms of Use and policy in your Uber app for details.<br /><br />Some features are only available in select cities, and the trips applicable for Uber Reserve will vary per city. Be sure to check the app for availability.</p>
       </div>
- <footer className="uber_footer_custom">
+ <footer className="terms_footer_custom">
                <div className="footer_top_custom">
                  <Link to="/Uber" className="footer_logo_custom">Uber</Link>
                  <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>

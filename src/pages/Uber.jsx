@@ -461,87 +461,87 @@ function Uber() {
         </div>
       </section>
 
-      <footer className="uber_footer_custom">
-                    <div className="footer_top_custom">
-                      <Link to="/Uber" className="footer_logo_custom">Uber</Link>
-                      <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
-                    </div>
-                    <div className="footer_columns_custom">
-                      <div>
-                        <h3>Company</h3>
-                        <Link to='https://www.uber.com/in/en/about/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'>  <p>About us</p></Link>
-                        <Link to='https://www.uber.com/in/en/about/uber-offerings/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'> <p>Our offerings</p></Link>
-                        <Link to='uber.com/in/en/newsroom/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Newsroom</p></Link>
-                           <Link to='https://investor.uber.com/home/default.aspx'> <p>Investors</p></Link>
-                              <Link to='https://www.uber.com/in/en/blog/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Blog</p></Link>
-                                 <Link to='https://jobs.uber.com/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>     <p>Careers</p></Link>
-                                    <Link to='https://www.uber.com/in/en/uber-one/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber One</p></Link>
-                                    
-                      
-                       
-                       
-                        
-                   
-                       
-                      </div>
-                      <div>
-                        <h3>Products</h3>
-                        <Link to='/Home'><p>Ride</p></Link>
-                        <Link to='https://www.uber.com/in/en/drive/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Drive</p></Link>
-                        <Link to='https://www.ubereats.com/in?marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d&uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Eat</p></Link>
-                        <Link to='https://www.uber.com/in/en/business/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber for Business</p></Link>
-                        <Link to='https://www.uberfreight.com/en-US?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber Freight</p></Link>
-                        <Link to='https://www.uber.com/in/en/gift-cards/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>    <p>Gift cards</p></Link>
-                        <Link to='https://www.uberhealth.com/in/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e&marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d'> <p>Uber Health</p></Link>
-                        <Link to='https://www.uber.com/in/en/advertising/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>                 
-                        <p>Uber Advertising</p></Link>
-                        </div>
-      
-                      <div>
-                         <h3>Global citizenship</h3>
-                        <Link to='https://www.uber.com/in/en/safety/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>  <p>Safety</p></Link>
-                       <Link to='https://www.uber.com/in/en/about/sustainability/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Sustainability</p></Link>
-                      
-                       
-                      </div>
-                      <div>
-                        <h3>Travel</h3>
-                        <Link to='/Login'><p>Reserve</p></Link>
-                          <Link to='https://www.uber.com/in/en/airports/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>   <p>Airports</p></Link>
-                            <Link to='https://www.uber.com/in/en/hotels/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Hotels</p></Link>
-                              <Link to='Search_cities'>  <p>Cities</p></Link>
-      
-                        
+     <footer className="uber_footer">
+                   <div className="footer_top_custom">
+                     <Link to="/Uber" className="footer_logo_custom">Uber</Link>
+                     <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
+                   </div>
+                   <div className="footer_columns_custom">
+                     <div>
+                       <h3>Company</h3>
+                       <Link to='https://www.uber.com/in/en/about/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'>  <p>About us</p></Link>
+                       <Link to='https://www.uber.com/in/en/about/uber-offerings/?uclick_id=f48d5754-c691-4360-8e5f-d39831f221d0'> <p>Our offerings</p></Link>
+                       <Link to='uber.com/in/en/newsroom/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Newsroom</p></Link>
+                          <Link to='https://investor.uber.com/home/default.aspx'> <p>Investors</p></Link>
+                             <Link to='https://www.uber.com/in/en/blog/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Blog</p></Link>
+                                <Link to='https://jobs.uber.com/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>     <p>Careers</p></Link>
+                                   <Link to='https://www.uber.com/in/en/uber-one/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber One</p></Link>
+                                   
                      
-                
                       
-                      </div>
-                    </div>
-                    <div className="footer_social_location">
-                      <div className="footer_social_help">
-                        <Link to='https://www.linkedin.com/company/uber/'> <img src={image46} alt="linkedin" /></Link>
-                        <Link to="https://www.youtube.com/user/uber">  <img src={image47} alt="youtube" /></Link>
-                        <Link to="https://www.instagram.com/uber/"><img src={image48} alt="instagram" /></Link>
-                        <Link to="https://x.com/uber"> <img src={image49} alt="twitter" /></Link>
-                      </div>
-                      <div className="footer_location_help">
-                        <Link to='En'><button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button></Link>
-                        
-                        <button type="button" className="footer_pill_btn"><img src={image66} alt="location" width="18px" height="auto" />Kochi</button>
-                      </div>
-                    </div>
-                    <div className="footer_apps_help">
-                      <Link to="https://play.google.com/store/apps/details?id=com.ubercab"><img src={image44} alt="google_play" className="footer_app_badge" /></Link>
-                      <Link to="https://apps.apple.com/app/uber/id368677368"> <img src={image45} alt="app_store" className="footer_app_badge" /></Link>
-                    </div>
-                    <div className="footer_bottom_help">
-                      <p className="footer_copyright_help">© 2026 Uber Technologies Inc.</p>
-                      <div className="footer_legal_help">
-                        <Link to="https://www.uber.com/legal/privacy/">Privacy</Link>
-                        <Link to="https://www.uber.com/accessibility/">Accessibility</Link>
-                        <Link to="https://www.uber.com/legal/">Terms</Link>
-                      </div>
-                    </div>
+                      
+                       
+                  
+                      
+                     </div>
+                     <div>
+                       <h3>Products</h3>
+                       <Link to='/Home'><p>Ride</p></Link>
+                       <Link to='https://www.uber.com/in/en/drive/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Drive</p></Link>
+                       <Link to='https://www.ubereats.com/in?marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d&uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Eat</p></Link>
+                       <Link to='https://www.uber.com/in/en/business/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber for Business</p></Link>
+                       <Link to='https://www.uberfreight.com/en-US?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Uber Freight</p></Link>
+                       <Link to='https://www.uber.com/in/en/gift-cards/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>    <p>Gift cards</p></Link>
+                       <Link to='https://www.uberhealth.com/in/en/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e&marketing_vistor_id=b61e759d-0c16-4e33-840d-6c06772a052d'> <p>Uber Health</p></Link>
+                       <Link to='https://www.uber.com/in/en/advertising/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>                 
+                       <p>Uber Advertising</p></Link>
+                       </div>
+     
+                     <div>
+                        <h3>Global citizenship</h3>
+                       <Link to='https://www.uber.com/in/en/safety/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>  <p>Safety</p></Link>
+                      <Link to='https://www.uber.com/in/en/about/sustainability/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'> <p>Sustainability</p></Link>
+                     
+                      
+                     </div>
+                     <div>
+                       <h3>Travel</h3>
+                       <Link to='/Login'><p>Reserve</p></Link>
+                         <Link to='https://www.uber.com/in/en/airports/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'>   <p>Airports</p></Link>
+                           <Link to='https://www.uber.com/in/en/hotels/?uclick_id=ac649601-7ff6-4967-b355-ec3296699c3e'><p>Hotels</p></Link>
+                             <Link to='Search_cities'>  <p>Cities</p></Link>
+     
+                       
+                    
+               
+                     
+                     </div>
+                   </div>
+                   <div className="footer_social_location">
+                     <div className="footer_social_help">
+                       <Link to='https://www.linkedin.com/company/uber/'> <img src={image46} alt="linkedin" /></Link>
+                       <Link to="https://www.youtube.com/user/uber">  <img src={image47} alt="youtube" /></Link>
+                       <Link to="https://www.instagram.com/uber/"><img src={image48} alt="instagram" /></Link>
+                       <Link to="https://x.com/uber"> <img src={image49} alt="twitter" /></Link>
+                     </div>
+                     <div className="footer_location_help">
+                       <Link to='En'><button type="button" className="footer_pill_btn"><img src={image2} alt="globe" width="18px" height="auto" />EN</button></Link>
+                       
+                       <button type="button" className="footer_pill_btn"><img src={image66} alt="location" width="18px" height="auto" />Kochi</button>
+                     </div>
+                   </div>
+                   <div className="footer_apps_help">
+                     <Link to="https://play.google.com/store/apps/details?id=com.ubercab"><img src={image44} alt="google_play" className="footer_app_badge" /></Link>
+                     <Link to="https://apps.apple.com/app/uber/id368677368"> <img src={image45} alt="app_store" className="footer_app_badge" /></Link>
+                   </div>
+                   <div className="footer_bottom_help">
+                     <p className="footer_copyright_help">© 2026 Uber Technologies Inc.</p>
+                     <div className="footer_legal_help">
+                       <Link to="https://www.uber.com/legal/privacy/">Privacy</Link>
+                       <Link to="https://www.uber.com/accessibility/">Accessibility</Link>
+                       <Link to="https://www.uber.com/legal/">Terms</Link>
+                     </div>
+                   </div>
                   
                  </footer>
     </div>

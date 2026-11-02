@@ -38,6 +38,7 @@ function Home(){
   const [pickup, setPickup] = useState('');
   const [dropoff, setDropoff] = useState('');
   const [showAbout, setShowAbout] = useState(false);
+  const [showpick,setPick] = useState(false);
  const [answer1, setAnswer1] = useState("");
   const [answer2, setAnswer2] = useState("");
    const [answer3, setAnswer3] = useState("");
@@ -192,14 +193,22 @@ function Home(){
           <button className="change_city" style={{ cursor: "pointer" }}>Change city</button>
         </div>
         <h1>Request a ride</h1>
-        <h3 className="pickup-now" style={{ cursor: "pointer" }}><img className="image3" src={image3} alt="clock" width='20px'/>pickup now</h3>
+        <h3 className="pickup-now" style={{ cursor: "pointer" }}  onClick={() => setPick(!showpick)}><img className="image3" src={image3} alt="clock" width='20px'/>pickup now</h3>
+          {showpick && (
+          <div className="about_dropdown">
+            <Link to='/'> <p>Pickup now</p></Link>
+            <Link to='/'> <p>Schedule later</p></Link>
+           
+           
+          </div>
+        )}
         <img  className='image24_home'src={image24} alt="arrow" height='20px' />
         <input  type="search" placeholder=" Pickup location" value={pickup} onChange={(e) => setPickup(e.target.value)}/>
         <br></br>
         <img  className ='image23_home'src={image23} alt="line" height='100px' />
         <input type="search"placeholder="Dropoff location" className='drop' value={dropoff} onChange={(e) => setDropoff(e.target.value)}/>
         <br></br>
-        <Link to={`/Ride?pickup=${encodeURIComponent(pickup)}&dropoff=${encodeURIComponent(dropoff)}`}><button className="price_button_home">See prices</button></Link>
+        <Link to={`/Login?pickup=${encodeURIComponent(pickup)}&dropoff=${encodeURIComponent(dropoff)}`}><button className="price_button_home">See prices</button></Link>
         
       </div>
       <div className="image1"><img src={image1} width='40%' height='auto' alt="Girl"/></div>

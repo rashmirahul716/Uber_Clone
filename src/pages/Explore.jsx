@@ -420,7 +420,7 @@ function Explore() {
             Uber reserves the right to alter, suspend or withdraw the promotion offer in the future at its sole discretion without any prior notice. Terms and conditions apply.
           </p>
         </section>
-      </main><footer className="uber_footer_custom">
+      </main><footer className="explore_footer_custom">
                     <div className="footer_top_custom">
                       <Link to="/Uber" className="footer_logo_custom">Uber</Link>
                       <Link to="/Help" className="footer_help_center_custom">Visit Help Center</Link>
